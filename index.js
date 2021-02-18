@@ -20,11 +20,11 @@ app.get("/", (req, res) => {
 	});
 });
 
-app.listen(process.env.PORT || 8080, () =>
-	console.log("petition server is listening")
-);
-// if (require.main == module) {
-// 	app.listen(process.env.PORT || 8080, () =>
-// 		console.log("portfolio server is listening")
-// 	);
-// }
+// app.listen(process.env.PORT || 8080, () =>
+// 	console.log("petition server is listening")
+// );
+if (require.main == module) {
+	app.listen(process.env.PORT || 8080, () =>
+		console.log("portfolio server is listening")
+	);
+}
