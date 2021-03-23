@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080, () =>
-	console.log("petition server is listening")
+	console.log("petition server is listening at http://localhost:8080")
 );
 // if (require.main == module) {
 // 	app.listen(process.env.PORT || 8080, () =>

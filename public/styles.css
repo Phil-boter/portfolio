@@ -71,7 +71,7 @@ header {
 	background-position: center;
 
 	/* clip the text is possible */
-	text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -121,7 +121,7 @@ section p {
 	color: skyblue;
 }
 .link-cv {
-	color: red;
+	color: yellow;
 }
 .link-mailto {
 	color: lightsalmon;
