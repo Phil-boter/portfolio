@@ -65,7 +65,7 @@ header {
 
 .container_solid .title_wrapper h1 {
 	/* the text background */
-	background-image: url(./images/color.jpg);
+	background-image: url(./images/colorSmall.jpg);
 	background-size: 100vw auto;
 	background-position: center;
 
@@ -81,7 +81,7 @@ header {
 
 .container_image {
 	/* Grab a free image from unsplash */
-	background-image: url(./images/color.jpg);
+	background-image: url(./images/colorSmall.jpg);
 	background-size: 100vw auto;
 	background-position: center;
 	background-attachment: fixed;
@@ -140,7 +140,7 @@ section p {
 	}
 	.container_solid .title_wrapper h1 {
 		color: rgba(29, 29, 29, 1);
-		background-image: url(./images/color.jpg);
+		/* background-image: url(./images/color.jpg); */
 	}
 	.link-github {
 		color: orange;
