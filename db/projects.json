@@ -1,0 +1,33 @@
+[
+	{
+		"title": "ElJeffe",
+		"description": "This project is a further development of my final project I builded during my attendance to the Coding Bootcamp at Spiced Academy in Berlin. At the homepage the user can decide to search for shoppinglists or restaurants. It is also possible to make an user account. Setting up an user the account offers the possibility to save shopping list and restaurants in a favourites list. After adding to one of the favourite lists, the user can also add and delete notes to his favourites. A search function for special restaurants or shopping lists inside the favourites is also available. Finally the user can decide to logout or to delete the account. Two different server side API calls are made for the search functionality. Now the app is managed by Redux and uses hooks instead of class-components. The app is optimized for mobile use.",
+		"technology": "HTML5, CSS3, React.js/Hooks, Redux, Node/Express, postgreSQL",
+		"link": "https://github.com/Phil-boter/react-recipeSearch",
+		"image": "./images/screenshot_eljeffe.png"
+	},
+	{
+		"title": "Social",
+		"title2": "Network",
+		"description": "I builded this project during my attendance to the Coding Bootcamp at Spiced Academy's in Berlin. Users can sign up, sign in, logout. With AWS SES the user is able to reset the password. Signed-in the user is possible to upload a profile picture with the help of AWS s3 and edit the porfile. The user can also make friend-request, accept or ignore them, watch already accepted requests and delete existing friendships. There is also a build in search function to search for new frienships. With socket.io there is also a real time chat implemented.",
+		"technology": "HTML5, CSS3, React.js, Redux, Node/Express, postgreSQL, AWS S3/SES",
+		"link": "https://github.com/Phil-boter/social-network",
+		"image": "./images/monkeybusiness1.png"
+	},
+
+	{
+		"title": "ImageBoard",
+		"description": "I builded this project during my attendance to the Coding Bootcamp at Spiced Academy's in Berlin. Users can can upload images to the image-board. The images are stored with AWS s3. Once uploaded it is possible to open up a single picture and make comments to this picture and go for- and backwards to the next or previous picture.",
+		"technology": "HTML5, CSS3, VUE, Node/Express, postgreSQL, AWS S3",
+		"link": "https://github.com/Phil-boter/imageboard",
+		"image": "./images/imageboard1.png"
+	},
+
+	{
+		"title": "Petition",
+		"description": "I builded this project during my attendance to the Coding Bootcamp at Spiced Academy's in Berlin. Users can sign up, sign in, logout. Draw and edit a signature on a canvas, edit their profile. See other users who have signed and filtering them by city.",
+		"technology": "HTML5, CSS3, Handlebars, Node/Express, postgreSQL, Jest",
+		"link": "https://github.com/Phil-boter/petition",
+		"image": "./images/petition1.png"
+	}
+]

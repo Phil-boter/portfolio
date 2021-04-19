@@ -1,0 +1,61 @@
+
+<header class="header">
+	<navigation>
+		<div class="navigation">
+			<ul class="link-list">
+				<a href="/">
+					<li class="list">
+						<span>Home</span>
+					</li>
+				</a>
+				<a href="/about">
+					<li class="list">
+						<span>About</span>
+					</li>
+				</a>
+				
+				<a href="/contact">
+					<li class="list">
+						<span>Contact</span>
+					</li>
+				</a>
+			</ul>
+		
+			<div class="intro-text">	
+				<h1 class="header1">
+					<span>Projects</span>
+				</h1>
+			</div>
+		</div>	
+	</navigation>
+</header>
+
+<section class="project-section" id="project-section">
+        {{#projects}}
+         <section class="project-inner-section">            
+            <div class="intro-text">
+            <h1 class="header1 article-header"><span>{{title}}</span></h1>
+			{{#if title2}}
+            <h1 class="header1 article-header title2"><span>{{title2}}</span></h1>
+			{{/if}}
+            </div>
+                <article>
+                    <div class="article-image-container"  >
+                    <img class="article-image" id="article-image" src="{{image}}"alt="picture of {{title}} mainpage"/>
+                    </div>
+                    <div>
+                        <h4 class="article-headline">Description:</h4>
+                        <p class="article-body">{{description}}</p>
+                    </div>
+                    <div>
+                        <h4 class="article-headline">Technologies:</h4>
+                        <p class="article-body">{{technology}}</p>
+                    </div>
+                    <div>
+                        <h4 class="article-headline">Find code on:</h4>
+                        <a class="article-body" href="{{link}}">{{link}}</a>
+                    </div>
+                </article>
+            </section>  
+        {{/projects}}
+     </section>     
