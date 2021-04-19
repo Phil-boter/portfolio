@@ -94,7 +94,7 @@ section img {
 	height: 6rem;
 	display: flex;
 	overflow: hidden;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 	justify-content: center;
 }
 
@@ -173,6 +173,7 @@ ul li:hover {
 /* --------------projects article-------------- */
 .project-section {
 	height: 250px;
+	align-items: center;
 }
 article {
 	padding: 0 3rem 0 3rem;
@@ -204,8 +205,14 @@ article {
 	font-family: Vollkorn;
 	padding: 0.5rem;
 }
+.article-content {
+	text-align: center;
+}
+.description {
+	text-align: start;
+}
 .article-body {
-	padding: 1.5rem;
+	padding: 0 1.5rem;
 }
 .article-body:last-child {
 	padding-bottom: 0;
@@ -235,9 +242,7 @@ article {
 		line-height: 3rem;
 		font-size: 3rem;
 	}
-	.header2 span {
-		font-size: 1rem !important;
-	}
+
 	.link-container {
 		height: 12rem;
 		bottom: 1rem;

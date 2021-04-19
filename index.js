@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const projects = require("./db/projects.json");
+const data = require("./db/data.json");
 
 const hb = require("express-handlebars");
 app.engine("handlebars", hb());
@@ -27,7 +27,7 @@ app.get("/", (req, res, next) => {
 
 app.get("/contact", (req, res) => {
 	console.log("user is requesting contact");
-	res.render("contact");
+	res.render("contact", { contact: data.contact });
 });
 app.get("/about", (req, res) => {
 	console.log("user is rtequesting about");
@@ -36,15 +36,15 @@ app.get("/about", (req, res) => {
 app.get("/projects", (req, res) => {
 	console.log("user is rtequesting projects");
 	console.log("req.params", req.params);
-	console.log("projetcs", projects);
-	// const selectedProject = projects.find((item) => item.directory == project);
-
+	console.log("data", data.projects);
+	let newData = data.projects;
+	// const data = data.find((item) => item.directory == project);
+	// console.log("selected", selectedProject);
 	// if (!selectedProject) {
 	// 	return res.sendStatus(404);
 	// } else {
 	res.render("projects", {
-		projects,
-		// selectedProject,
+		newData,
 	});
 	// }
 	// res.render("projects");

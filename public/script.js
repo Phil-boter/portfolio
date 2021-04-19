@@ -19,7 +19,7 @@ function showItem(entries) {
 			letters.forEach((letter, idx) => {
 				setTimeout(() => {
 					letter.classList.add("active");
-				}, idx * 20);
+				}, idx * 5);
 			});
 			entry.target.children[0].classList.add(`active`);
 		}
@@ -79,7 +79,7 @@ header.forEach((item) => {
 // ------------- change background ------------------
 
 function bgChanger() {
-	if (this.scrollY > this.innerHeight / 1.6) {
+	if (this.scrollY > this.innerHeight / 1.7) {
 		// this refers here to window
 		document.body.classList.add("bg-active");
 	} else {

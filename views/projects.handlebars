@@ -31,7 +31,7 @@
 </header>
 
 <section class="project-section" id="project-section">
-        {{#projects}}
+        {{#newData}}
          <section class="project-inner-section">            
             <div class="intro-text">
             <h1 class="header1 article-header"><span>{{title}}</span></h1>
@@ -43,19 +43,25 @@
                     <div class="article-image-container"  >
                     <img class="article-image" id="article-image" src="{{image}}"alt="picture of {{title}} mainpage"/>
                     </div>
-                    <div>
+                    <div class="article-content description">
                         <h4 class="article-headline">Description:</h4>
                         <p class="article-body">{{description}}</p>
                     </div>
-                    <div>
+                    <div class="article-content description">
                         <h4 class="article-headline">Technologies:</h4>
                         <p class="article-body">{{technology}}</p>
                     </div>
-                    <div>
+                    <div class="article-content">
                         <h4 class="article-headline">Find code on:</h4>
                         <a class="article-body" href="{{link}}">{{link}}</a>
                     </div>
+					{{#if try}}
+					<div class="article-content">
+                        <h4 class="article-headline">Explore on:</h4>
+                        <a class="article-body" href="{{try}}">{{try}}</a>
+                    </div>
+					{{/if}}
                 </article>
             </section>  
-        {{/projects}}
+        {{/newData}}
      </section>     
