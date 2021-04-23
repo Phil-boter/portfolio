@@ -1,37 +1,14 @@
-
 <header class="header">
-	<navigation>
-		<div class="navigation">
-			<ul class="link-list">
-				<a href="/">
-					<li class="list">
-						<span>Home</span>
-					</li>
-				</a>
-				<a href="/about">
-					<li class="list">
-						<span>About</span>
-					</li>
-				</a>
-				
-				<a href="/contact">
-					<li class="list">
-						<span>Contact</span>
-					</li>
-				</a>
-			</ul>
-		
-			<div class="intro-text">	
-				<h1 class="header1">
-					<span>Projects</span>
-				</h1>
-			</div>
-		</div>	
-	</navigation>
+	<div class="intro-text">	
+		{{> navigation}}
+        {{> header}}
+	</div>
 </header>
 
+
+
 <section class="project-section" id="project-section">
-        {{#newData}}
+    {{#newData}}
          <section class="project-inner-section">            
             <div class="intro-text">
             <h1 class="header1 article-header"><span>{{title}}</span></h1>
@@ -56,12 +33,12 @@
                         <a class="article-body" href="{{link}}">{{link}}</a>
                     </div>
 					{{#if try}}
-					<div class="article-content">
-                        <h4 class="article-headline">Explore on:</h4>
-                        <a class="article-body" href="{{try}}">{{try}}</a>
-                    </div>
-					{{/if}}
-                </article>
-            </section>  
-        {{/newData}}
-     </section>     
+                        <div class="article-content">
+                            <h4 class="article-headline">Explore on:</h4>
+                            <a class="article-body" href="{{try}}">{{try}}</a>
+                        </div>
+			        {{/if}}
+                </article>   
+        </section>  
+    {{/newData}}
+</section>     

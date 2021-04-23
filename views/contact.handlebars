@@ -1,33 +1,8 @@
-
 <header class="header">
-	<navigation>
-	    <div class="navigation">
-			<ul class="link-list">
-				<a href="/">
-					<li class="list">
-						<span>Home</span>
-					</li>
-				</a>
-				<a href="/projects">
-					<li class="list">
-						<span>projects</span>
-					</li>
-				</a>
-				
-				<a href="/about">
-					<li class="list">
-						<span>about</span>
-					</li>
-				</a>
-			</ul>
-
-			<div class="intro-text">	
-				<h1 class="header1">
-					<span>Contact</span>
-				</h1>
-			</div>
-		</div>
-	</navigation>
+	<div class="intro-text">	
+		{{> navigation}}
+        {{> header}}
+	</div>
 </header>
 
     <section class="section">
@@ -38,7 +13,6 @@
 			        class="link-github"
 			        href={{github}}
 			        target="_blank"
-			        rel="noopener"
 			    >Github
                 </a>
 		    If you are interested in my educational background and
@@ -47,7 +21,6 @@
 			        class="link-linkedIn"
 			        href={{linkedIn}}
 			        target="_blank"
-			        rel="noopener"
 			    >LinkedIn
                </a>
 		    profile or download my
@@ -56,7 +29,6 @@
 			        href={{cv}}
 			        download="CV"
 			        target="_blank"
-					rel="noopener"
 				>CV
                 </a>. 
             Interested in working with me? Feel free to

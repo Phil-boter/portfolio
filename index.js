@@ -22,16 +22,20 @@ app.get("/", (req, res, next) => {
 	res.render("mainpage", {
 		layout: "main",
 		msg: "This is CORS-enabled for all origins!",
+		header: "philipp",
+		header2: "dawid",
 	});
 });
 
 app.get("/contact", (req, res) => {
 	console.log("user is requesting contact");
-	res.render("contact", { contact: data.contact });
+	res.render("contact", { contact: data.contact, header: "contact" });
 });
 app.get("/about", (req, res) => {
 	console.log("user is rtequesting about");
-	res.render("about");
+	res.render("about", {
+		header: "about",
+	});
 });
 app.get("/projects", (req, res) => {
 	console.log("user is rtequesting projects");
@@ -45,6 +49,7 @@ app.get("/projects", (req, res) => {
 	// } else {
 	res.render("projects", {
 		newData,
+		header: "projects",
 	});
 	// }
 	// res.render("projects");
